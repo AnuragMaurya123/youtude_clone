@@ -1,0 +1,27 @@
+{
+  "name": "youtude_clone",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/AnuragMaurya123/youtude_clone#readme",
+  "bugs": {
+    "url": "https://github.com/AnuragMaurya123/youtude_clone/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnuragMaurya123/youtude_clone.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0"
+  }
+}
