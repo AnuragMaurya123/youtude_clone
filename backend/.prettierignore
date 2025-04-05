@@ -1,0 +1,22 @@
+# Ignore node_modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*.local
+
+# Ignore specific config files (optional)
+package-lock.json
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
