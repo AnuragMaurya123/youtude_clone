@@ -1,13 +1,20 @@
-import express from "express"
+import 'dotenv/config'
+import dbConnect from '../db/index.js'
+import { app } from './app.js';
 
-const app=express()
-
-app.use((req,res)=>{
-    res.json("api is working")
+dbConnect()
+.then(() => {
+    const port=process.env.PORT || 8000
+    app.listen(port,()=>{
+        console.log("Server is running on Port",port);
+    }) 
+    app.on("error",(error)=>{
+        console.error("Error in app while listen",error);
+        
+    })
+})
+.catch((error)=>{
+    console.error("Mongo Database Connection",error); 
 })
 
-const Port=4000
 
-app.listen(Port,()=>{
-    console.log(Port);
-})
